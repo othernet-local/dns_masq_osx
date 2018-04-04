@@ -16,7 +16,7 @@ $ sudo brew services start dnsmasq
 - any time we change `dnsmasq.conf` we have to re-start **dnsmasq**:
 ``
 $ sudo brew services restart dnsmasq
-
+``
 - For OS X to _resolve_ requests from `*.othernet` to **localhost** we need to add a _resolver_:   
 ``
 $ sudo mkdir /etc/resolver
@@ -30,7 +30,7 @@ nameserver 127.0.0.1
 
 ===
 **REFERENCES**
-
+- [ gist for installation ](https://stackoverflow.com/questions/22313142/wildcard-subdomains-with-dnsmasq)
 - [Using Dnsmasq for local development on OS X - Passing Curiosity](https://passingcuriosity.com/2013/dnsmasq-dev-osx/)
 - [Using Dnsmasq Configure Wildcard DNS Record on Mac | Ri Xu Online](https://xuri.me/2014/12/13/using-dnsmasq-configure-wildcard-dns-record-on-mac.html)
 - [unix - In my /etc/hosts/ file on Linux/OSX, how do I do a wildcard subdomain? - Server Fault](http://serverfault.com/questions/118378/in-my-etc-hosts-file-on-linux-osx-how-do-i-do-a-wildcard-subdomain)
